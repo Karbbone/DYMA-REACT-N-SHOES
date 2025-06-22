@@ -2,9 +2,15 @@ import { StyleSheet, Text } from "react-native";
 import { colors } from "../../constants/colors";
 import { textSize } from "../../constants/textSize";
 
-export const TextBoldM = ({ children, isBlue = false }) => {
+export const TextBoldM = ({ children, isBlue = false, style }) => {
   return (
-    <Text style={[styles.text, { color: isBlue ? colors.BLUE : colors.DARK }]}>
+    <Text
+      style={[
+        styles.text,
+        { color: isBlue ? colors.BLUE : colors.DARK },
+        style,
+      ]}
+    >
       {children}
     </Text>
   );

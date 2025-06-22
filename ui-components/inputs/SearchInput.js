@@ -2,6 +2,7 @@ import EvilIcons from "@expo/vector-icons/EvilIcons";
 import { StyleSheet, TextInput, View } from "react-native";
 import { colors } from "../../constants/colors";
 import { radius } from "../../constants/radius";
+import { ICON_SIZE } from "../../constants/sizes";
 import { spaces } from "../../constants/spaces";
 import { textSize } from "../../constants/textSize";
 
@@ -9,7 +10,7 @@ export const SearchInput = ({ placeholder, value, onChangeText }) => {
   return (
     <View style={styles.inputContainer}>
       <View style={styles.iconContainer}>
-        <EvilIcons name="search" size={32} color={colors.GREY} />
+        <EvilIcons name="search" size={ICON_SIZE} color={colors.GREY} />
       </View>
       <TextInput
         placeholder={placeholder}
