@@ -1,4 +1,4 @@
-export const space = {
+export const spaces = {
   XS: 4,
   S: 8,
   M: 16,
